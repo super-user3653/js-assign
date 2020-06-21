@@ -470,14 +470,21 @@ document.write("<br>Your Birth Year Is " + dateofbirth);
 
 
 var customername = prompt("Your Name");
-var month = prompt("");
-document.write("<br><br><h1>K-Electric Bill<h1>");
-document.write("");
-document.write("");
-document.write("");
-document.write("");
-document.write("");
-document.write("");
+var month = prompt("Enter Month");
+var nou = prompt("Enter Number Of Units");
+var cpu = prompt("Enter Charges Per Unit");
+var nap = nou * cpu;
+var lps = 350;
+var gapadd = nap + lps;
+document.write("<br><h1>K-Electric Bill</h1>");
+document.write("<br><br>Customer Name: " + customername);
+document.write("<br>Month: " + month);
+document.write("<br>Number Of Units: " + nou);
+document.write("<br>Charges Per Unit: " + cpu);
+document.write("<br><br>Net Amount Payable(Within Due Date): " + nap);
+document.write("<br>Late Payment Surcharge: 350");
+document.write("<br>Gross Amount Payable(after Due Date): " + gapadd);
+
 
 
 
